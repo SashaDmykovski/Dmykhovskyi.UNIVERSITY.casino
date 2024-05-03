@@ -2,7 +2,8 @@ import os
 from .settings import *
 from .settings import BASE_DIR
 
-SECRET_KEY = 'django-insecure-4-hm@1n@$cj57=vbri4)sz_zjw(9_cd*-%hoyq4+61#*6ns-(q'
+SECRET_KEY = os.enivron['SECRET']
+
 ALLOWED_HOSTS = [os.enivron['WEBSITE_HOSTNAME']]
 CSRF_TRUSTED_ORIGINS = ['https://' + os.enivron['WEBSITE_HOSTNAME']]
 DEBUG = False
